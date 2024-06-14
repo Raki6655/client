@@ -23,13 +23,13 @@ const benifitData = [
 	},
 ];
 interface myProps {
-	benifitData?: { title: string; img: string }[];
+	benifitData?: { title: string; img: string; }[];
 }
 const Benifits = (props: myProps) => {
 	return (
 		<div className="w-full my-4  py-3 flex flex-wrap justify-between">
 			{benifitData.map((item) => (
-				<div className="px-10 gap-2 w-1/2 flex justify-center py-5 flex-col items-center lg:w-1/4">
+				<div className="px-10 gap-2 w-1/2 flex justify-center py-5 flex-col items-center lg:w-1/4" key={item.title}>
 					<Image src={item.img} alt="logo" width={50} height={25} />
 					<span>{item.title}</span>
 				</div>

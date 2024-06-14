@@ -6,7 +6,7 @@ import menuItems from "@/app/Components/Brands/mock/menuItems";
 import { ActiveMenuActions } from "@/app/store/activemenu-slice";
 import SubmenuList from "./SubmenuList";
 import Link from "next/link";
-import { IDropDown, ISubList } from "@/app/lib/types/typed";
+import { IDropDown, ISubList } from "@/app/types/typed";
 interface DropDownRootProps {
 	ref: any;
 	closeDrop: any;

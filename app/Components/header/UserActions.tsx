@@ -1,4 +1,4 @@
-import { ICartList, IProduct } from "@/app/lib/types/typed";
+import { ICartList, IProduct } from "@/app/types/typed";
 import { CartActions } from "@/app/store/cart-slice";
 import Image from "next/image";
 import Link from "next/link";
@@ -47,9 +47,9 @@ const UserActions = () => {
 					<div
 						className="hidden md:block relative "
 
-						// onMouseLeave={() =>
-						// 	dispatch(CartActions.closeCartBox({ isCartOpen: false }))
-						// }
+					// onMouseLeave={() =>
+					// 	dispatch(CartActions.closeCartBox({ isCartOpen: false }))
+					// }
 					>
 						<AiOutlineShoppingCart fontSize={"1.5rem"} />
 					</div>
@@ -63,7 +63,7 @@ const UserActions = () => {
 								<p className="text-blue-500 ">See cart</p>
 							</div>
 							{cartItems?.map((item) => (
-								<CartItem product={item} />
+								<CartItem product={item} key={item._id} />
 							))}
 							<div className="flex justify-between">
 								<p>Total Amount</p>

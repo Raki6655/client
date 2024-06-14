@@ -21,7 +21,7 @@ const ProductSubList = () => {
 	return (
 		<div className="w-full lg:mx-auto flex justify-center gap-5 items-center mb-10 ">
 			{subList?.map((item: any) => (
-				<span
+				<span key={item.subName}
 					className=" px-5 py-3 lg:py-5 shadow-lg text-sm font-semibold text-center bg-white rounded-md  min-h-16 max-h-16 "
 					onClick={() => handleRoute(item.subName)}
 				>

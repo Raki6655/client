@@ -9,13 +9,13 @@ const index = () => {
 			<div className="relative max-w-[100vw] flex flex-col lg:flex-row justify-between mb-10">
 				<div className="flex flex-col lg:flex-row w-2/3 justify-between text-gray-600 ">
 					{footerContent.map((item, index) => (
-						<div className="flex flex-col relative">
+						<div className="flex flex-col relative" key={item.title}>
 							<span className="mb-3 before:content-[''] before:h-5  before:w-1 before:absolute  before:-translate-x-2 before:translate-y-1  before:bg-red-700">
 								{item.title}
 							</span>
 							<div className="w-full flex flex-col gap-3">
 								{item.subtitles.map((item, index) => (
-									<span className="pl-3">{item.text}</span>
+									<span className="pl-3" key={item.text}>{item.text}</span>
 								))}
 							</div>
 						</div>
@@ -25,7 +25,7 @@ const index = () => {
 					<span className="mb-10 text-xl font-medium">Be With Us!</span>
 					<div className="flex gap-5 my-3">
 						{socialMedia.map((item, index) => (
-							<item.icon fontSize={"2rem"} />
+							<item.icon fontSize={"2rem"} key={item.name} />
 						))}
 					</div>
 

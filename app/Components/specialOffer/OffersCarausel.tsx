@@ -7,15 +7,12 @@ import Slider from "react-slick";
 import { NextArrow, PrevArrow } from "./SliderArrows";
 import { HiOutlineChevronRight, HiOutlineChevronLeft } from "react-icons/hi";
 import RedDiscount from "../../public/images/discount.webp";
-import { IProduct } from "@/app/lib/types/typed";
-import axios from "axios";
+import { IProduct } from "@/app/types/typed";
 import Link from "next/link";
-interface ISpecialOffer
-{
+interface ISpecialOffer {
 	data: IProduct[];
 }
-const OffersCarausel: React.FC<ISpecialOffer> = ({ data }) =>
-{
+const OffersCarausel: React.FC<ISpecialOffer> = ({ data }) => {
 	// let [product, setProduct] = useState([]);
 	// const getData = async () => {
 	// 	let data = await axios.get("http://localhost:5000/api/get-all-posts");
@@ -75,7 +72,7 @@ const OffersCarausel: React.FC<ISpecialOffer> = ({ data }) =>
 			<Slider {...settings}>
 				{data.map((item: IProduct) => (
 					<Link
-						href={`${item.category[0]}/${item.category[1]}/${item.category[2]}/${item}`}
+						href={`${item.category[0]}/${item.category[1]}/${item.category[2]}/${item}`} key={item._id}
 					>
 						<div className="h-60 lg:h-80 relative w-40  bg-blue-100 flex-1 lg:flex-initial lg:w-60 rounded-md cursor-pointer py-5 px-2 my-0 lg:my-5">
 							<Image

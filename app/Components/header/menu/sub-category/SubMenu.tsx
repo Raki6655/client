@@ -57,7 +57,7 @@ const SubMenu = forwardRef<HTMLDivElement, SubMenuProps>(
 					</div>
 					<hr className="mb-5" />
 					{item.map((i, index) => (
-						<div className="w-full py-4 px-3 flex justify-between font-semibold">
+						<div className="w-full py-4 px-3 flex justify-between font-semibold" key={i.title}>
 							<span key={index}>{i.title}</span>
 							<MdOutlineKeyboardArrowDown />
 						</div>

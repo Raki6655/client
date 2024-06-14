@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import menuItems from "@/app/Components/Brands/mock/menuItems";
-import { ISubList } from "@/app/lib/types/typed";
+import { ISubList } from "@/app/types/typed";
 
 
 interface Handler {
@@ -13,6 +13,7 @@ const LeftMenu = ({ submenuHandler }: Handler) => {
 			{menuItems.map((item, index) => (
 				<div
 					className="flex justify-start text-start px-5 gap-5 mt-10"
+					key={item.category}
 					onMouseOver={() =>
 						submenuHandler({
 							category: item.category,

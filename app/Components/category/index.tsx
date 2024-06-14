@@ -81,7 +81,7 @@ const CategorySection = () => {
 
 			<div className="hidden lg:w-full lg:flex lg:gap-10 gap-2 lg:justify-between flex-wrap lg:items-center flex-grow relative ">
 				{categoryLgContent.map((item) => (
-					<CategoryLgCard item={item} />
+					<CategoryLgCard item={item} key={item.name} />
 				))}
 			</div>
 		</div>

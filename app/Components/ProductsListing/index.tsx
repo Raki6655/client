@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import SortOptions from "../SortOptions";
 import NewItemCard from "../UI/NewItemCard";
-import { IProduct } from "@/app/lib/types/typed";
+import { IProduct } from "@/app/types/typed";
 import { SortedProductListActions } from "@/app/store/sorted-product";
 import { useDispatch, useSelector } from "react-redux";
 import ProductSubList from "../ProductSubList";

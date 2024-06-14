@@ -1,4 +1,4 @@
-import { IProduct } from "@/app/lib/types/typed";
+import { IProduct } from "@/app/types/typed";
 import Image from "next/image";
 import React from "react";
 import PriceCard from "../PriceCard";
@@ -19,10 +19,10 @@ const SingleProduct: React.FC<ISignleProduct> = ({ product }) => {
 		const detailsVal = Array.isArray(product[0].details[item])
 			? product[0].details[item].join("-")
 			: product[0].details[item] == true
-			? (product[0].details[item] = "Yes")
-			: product[0].details[item] == false
-			? (product[0].details[item] = "no")
-			: product[0].details[item];
+				? (product[0].details[item] = "Yes")
+				: product[0].details[item] == false
+					? (product[0].details[item] = "no")
+					: product[0].details[item];
 		return detailsVal;
 	});
 	console.log(mapped);
@@ -44,6 +44,7 @@ const SingleProduct: React.FC<ISignleProduct> = ({ product }) => {
 									alt="single image"
 									height={50}
 									width={100}
+									key={item}
 								/>
 							))}
 						</div>
@@ -58,10 +59,10 @@ const SingleProduct: React.FC<ISignleProduct> = ({ product }) => {
 							const detailsVal = Array.isArray(product[0].details[item])
 								? product[0].details[item].join("-")
 								: product[0].details[item] == true
-								? (product[0].details[item] = "Yes")
-								: product[0].details[item] == false
-								? (product[0].details[item] = "no")
-								: product[0].details[item];
+									? (product[0].details[item] = "Yes")
+									: product[0].details[item] == false
+										? (product[0].details[item] = "no")
+										: product[0].details[item];
 							return (
 								<div className="flex gap-2 lg:gap-10 mb-3" key={product[0].id}>
 									<div className=" min-w-[8rem] h-[2.5rem] lg:w-1/4  bg-gray-300 flex items-center"><span className="text-gray-600  font-semibold ">{item}:</span></div>
