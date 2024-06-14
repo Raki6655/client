@@ -6,7 +6,7 @@ import MouseImage from "../../public/images/mouse.png";
 import BlurredInfoBox from "../UI/BlurredInfoBox";
 import NewItemCard from "../UI/NewItemCard";
 import RedButton from "../UI/RedButton";
-import { IProduct } from "@/app/lib/types/typed";
+import { IProduct } from "@/app/types/typed";
 import Link from "next/link";
 interface INewItemsSection {
 	products: IProduct[];

@@ -1,4 +1,4 @@
-import { ICartList, IProduct } from "@/app/lib/types/typed";
+import { ICartList, IProduct } from "@/app/types/typed";
 import { CartActions, IReducerCartItem } from "@/app/store/cart-slice";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";

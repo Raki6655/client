@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import { NextArrow, PrevArrow } from "../carausel/Arrows";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { IProduct } from "@/app/lib/types/typed";
+import { IProduct } from "@/app/types/typed";
 interface ISpecialOffer {
 	products: IProduct[];
 }

@@ -1,5 +1,5 @@
 "use client";
-import { IProduct } from "@/app/lib/types/typed";
+import { IProduct } from "@/app/types/typed";
 import cartSlice, { CartActions } from "@/app/store/cart-slice";
 import React from "react";
 import {

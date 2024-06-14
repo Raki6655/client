@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { ActiveMenuActions } from "@/app/store/activemenu-slice";
 import { IDropDown, ISubList } from "../dropdown/DropDownMenuV2";
 import { sideNavBarActions } from "@/app/store/sidebar-slice";
-import { ISideNavBarRootState } from "@/app/lib/types/typed";
+import { ISideNavBarRootState } from "@/app/types/typed";
 import { Transition, CSSTransition } from "react-transition-group";
 import "./sub-category/submenu.css";
 const SideNavContent = () => {

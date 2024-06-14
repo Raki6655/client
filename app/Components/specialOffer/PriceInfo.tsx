@@ -1,4 +1,4 @@
-import { IProduct } from "@/app/lib/types/typed";
+import { IProduct } from "@/app/types/typed";
 import React from "react";
 interface IProductPrice {
 	product: IProduct;
