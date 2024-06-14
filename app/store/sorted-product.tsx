@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { IProduct } from "../lib/types/typed";
+import { IProduct } from "../types/typed";
 import { stat } from "fs";
 
 interface IProductList {
@@ -16,7 +16,7 @@ const SortedProductsSlice = createSlice({
 	reducers: {
 		sortedProductList(
 			state,
-			action: PayloadAction<{ productsList: IProduct[]; searchType: string }>
+			action: PayloadAction<{ productsList: IProduct[]; searchType: string; }>
 		) {
 			switch (action.payload.searchType) {
 				case "all":

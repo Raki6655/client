@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { IDropDown, SideBarState } from "../lib/types/typed";
+import { IDropDown, SideBarState } from "../types/typed";
 
 const initialState: SideBarState = {
 	isSidebarOpen: false,
