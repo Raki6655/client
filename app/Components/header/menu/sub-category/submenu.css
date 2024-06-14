@@ -1,0 +1,55 @@
+.submenu-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.submenu {
+	/* visibility: hidden;
+	opacity: 0; */
+	overflow: hidden;
+	position: fixed;
+	left: -30rem;
+	top: 0;
+}
+.submenu.entering,
+.submenu.entered {
+	/* Transition duration */
+	transition: left 300ms ease-in-out;
+	/* Final width */
+	left: 0rem;
+
+	/* visibility: visible;
+	opacity: 1; */
+}
+
+.submenu.exiting,
+.submenu.exited {
+	/* Transition duration */
+	transition: left 300ms ease-in-out;
+	/* Final width */
+	left: -30rem;
+
+	/* visibility: hidden;
+	opacity: 0; */
+}
+.dropdown {
+	height: 0;
+}
+.dropdown.entering,
+.dropdown.entered {
+	/* Transition duration */
+	transition: height 300ms ease-in-out;
+	/* Final width */
+	height: 60%;
+}
+
+.dropdown.exiting,
+.dropdown.exited {
+	/* Transition duration */
+	transition: height 300ms ease-in-out;
+	/* Final width */
+	height: 0;
+}
