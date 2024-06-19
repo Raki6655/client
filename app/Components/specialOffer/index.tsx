@@ -30,6 +30,9 @@ const SpecialOffers: React.FC<ISpecialOffer> = ({ products }) => {
 			</div>
 		),
 	};
+	if (!!products) {
+		return (<span>No products found</span>);
+	}
 
 	return (
 		<div className="w-full px-2 lg:px-5 py-2 lg:py-5 bg-blue-300  my-10 flex gap-3 lg:gap-10 flex-grow overflow-x-hidden items-center">
