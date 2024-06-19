@@ -1,8 +1,8 @@
 import React from "react";
 import SectionTitle from "../UI/SectionTitle";
-import SmallCard from "./SmallCard";
+import CategoryMobileCard from "./CategoryMobileCard";
 import CategoryLgCard from "./CategoryLgCard";
-import DigitalPhoneImg from "../../public/images/category-img/digital-category.webp";
+import DigitalPhoneImg from "../../../public/images/category-img/digital-category.webp";
 import Image from "next/image";
 import RedButton from "../UI/RedButton";
 import { categoryLgContent } from "@/app/Components/Brands/mock/categoryLarge";
@@ -63,13 +63,13 @@ const CategorySection = () => {
 		<div className="mx-auto">
 			<SectionTitle title={title} />
 			<div className="lg:hidden w-full px-10 md:px-20 flex gap-[2rem] flex-wrap ml-auto justify-between mt-10">
-				<SmallCard />
-				<SmallCard />
-				<SmallCard />
-				<SmallCard />
-				<SmallCard />
-				<SmallCard />
-				<SmallCard />
+				<CategoryMobileCard />
+				<CategoryMobileCard />
+				<CategoryMobileCard />
+				<CategoryMobileCard />
+				<CategoryMobileCard />
+				<CategoryMobileCard />
+				<CategoryMobileCard />
 			</div>
 			{/* <div className="hidden lg:w-full lg:flex gap-2 flex-wrap">
 				<CategoryLgCard>{children}</CategoryLgCard>

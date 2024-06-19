@@ -6,7 +6,7 @@ import PriceInfo from "./PriceInfo";
 import Slider from "react-slick";
 import { NextArrow, PrevArrow } from "./SliderArrows";
 import { HiOutlineChevronRight, HiOutlineChevronLeft } from "react-icons/hi";
-import RedDiscount from "../../public/images/discount.webp";
+import RedDiscount from "../../../public/images/discount.webp";
 import { IProduct } from "@/app/types/typed";
 import Link from "next/link";
 interface ISpecialOffer {
@@ -71,28 +71,28 @@ const OffersCarausel: React.FC<ISpecialOffer> = ({ data }) => {
 		<div className="relative w-[55%] lg:w-[85%] ">
 			<Slider {...settings}>
 				{data.map((item: IProduct) => (
-					<Link
-						href={`${item.category[0]}/${item.category[1]}/${item.category[2]}/${item}`} key={item._id}
-					>
-						<div className="h-60 lg:h-80 relative w-40  bg-blue-100 flex-1 lg:flex-initial lg:w-60 rounded-md cursor-pointer py-5 px-2 my-0 lg:my-5">
+					// <Link
+					// 	href={`${item.category[0]}/${item.category[1]}/${item.category[2]}/${item}`} key={item._id}
+					// >
+					<div className="h-60 lg:h-80 relative w-40  bg-blue-100 flex-1 lg:flex-initial lg:w-60 rounded-md cursor-pointer py-5 px-2 my-0 lg:my-5">
+						<Image
+							src={item.image[0]}
+							alt="jbl_image"
+							height={100}
+							width={100}
+							className="w-20 mx-auto h-20 lg:h-40 lg:w-40 hover:scale-110 transition-all duration-300 max-h-40 min-h-40 object-contain"
+						/>
+						{item.discount && (
 							<Image
-								src={item.image[0]}
-								alt="jbl_image"
-								height={100}
-								width={100}
-								className="w-20 mx-auto h-20 lg:h-40 lg:w-40 hover:scale-110 transition-all duration-300 max-h-40 min-h-40 object-contain"
+								src={RedDiscount}
+								alt="discount"
+								width={40}
+								className="absolute -right-2 -top-2 z-100"
 							/>
-							{item.discount && (
-								<Image
-									src={RedDiscount}
-									alt="discount"
-									width={40}
-									className="absolute -right-2 -top-2 z-100"
-								/>
-							)}
-							<PriceInfo product={item} />
-						</div>
-					</Link>
+						)}
+						<PriceInfo product={item} />
+					</div>
+					// </Link>
 				))}
 			</Slider>
 		</div>

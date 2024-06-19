@@ -38,7 +38,7 @@ const Navbar = forwardRef<HTMLDivElement, props>(({ state, onClose }, ref) => {
 		// >
 
 		<div
-			className={`navbar w-[80vw] h-full bg-white fixed z-[1000] top-0 left-0 py-3  ${getAnimationClassName()}`}
+			className={`navbar w-[80vw] h-full  fixed z-[1000] top-0  py-3  ${getAnimationClassName()}`}
 			ref={ref}
 		>
 			<div className="flex flex-col relative">

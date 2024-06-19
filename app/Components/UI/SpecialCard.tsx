@@ -1,15 +1,15 @@
 "use client";
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import RedButton from "./RedButton";
 import Image from "next/image";
-import SalesImage1 from "../../public/images/special_sales1.jpg";
+import SalesImage1 from "../../../public/images/special_sales1.jpg";
 import DateTimeCard from "./DateTimeCard";
 
 const SpecialCard = () => {
-	let [loaded,setLoaded] = useState(false)
-	useEffect(()=> {
-setLoaded(true)
-	},[])
+	let [loaded, setLoaded] = useState(false);
+	useEffect(() => {
+		setLoaded(true);
+	}, []);
 	return (
 		<div className="w-full h-[12rem] bg-green-500 relative top-0 lg:h-[25rem] overflow-hidden">
 			<Image

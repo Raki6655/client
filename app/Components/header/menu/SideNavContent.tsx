@@ -30,6 +30,20 @@ const SideNavContent = () => {
 	);
 	const subMenuRef = useRef<HTMLDivElement>(null);
 
+	const defaultStyle: any = {
+		transition: `opacity 300ms ease-in-out`,
+		opacity: 0,
+	};
+
+	const transitionStyles: any = {
+		entering: { opacity: 1 },
+		entered: { opacity: 1 },
+		exiting: { opacity: 0 },
+		exited: { opacity: 0 },
+		unmounted: {},
+	};
+
+
 	return (
 		<div className="pl-5 overflow-hidden w-full">
 			<h2 className="font-bold text-xl mb-5">Category of Goods</h2>
@@ -55,7 +69,7 @@ const SideNavContent = () => {
 						)}
 					</div>
 				))}
-			<CSSTransition
+			{/* <CSSTransition
 				nodeRef={subMenuRef}
 				in={isNavBarOpen}
 				timeout={300}
@@ -68,13 +82,32 @@ const SideNavContent = () => {
 				mountOnEnter
 				unmountOnExit
 			>
-				<SubMenu
+				{(state) => (<SubMenu
 					item={sideMenuItems}
 					open={isNavBarOpen}
 					close={closeNav}
 					ref={subMenuRef}
 					state={isNavBarOpen ? "entered" : "exited"}
-				/>
+					style={{
+						...defaultStyle,
+						...transitionStyles[state],
+					}}
+				/>)}
+
+			</CSSTransition> */}
+			<CSSTransition
+				nodeRef={subMenuRef}
+				in={isNavBarOpen}
+				timeout={300}
+			>
+
+				<SubMenu
+					item={sideMenuItems}
+					open={isNavBarOpen}
+					close={closeNav}
+					ref={subMenuRef}
+					state={isNavBarOpen ? "entered" : "exited"} />
+
 			</CSSTransition>
 		</div>
 	);

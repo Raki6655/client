@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import SpecialBg from "../../public/images/offersbg.webp";
+import SpecialBg from "../../../public/images/offersbg.webp";
 
 const OffersLeft = () => {
 	return (

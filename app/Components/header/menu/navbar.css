@@ -2,7 +2,8 @@
 	/* visibility: hidden;
 	opacity: 0; */
 
-	left: -30rem;
+	left: -40rem;
+	background: rgb(var(--color-bg));
 }
 .navbar.entering,
 .navbar.entered {
@@ -21,7 +22,7 @@
 	transition: left 300ms ease-out;
 	/* Final width */
 
-	left: -30rem;
+	left: -40rem;
 	/* visibility: hidden;
 	opacity: 0; */
 }

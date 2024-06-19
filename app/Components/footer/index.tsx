@@ -47,7 +47,7 @@ const index = () => {
 			<hr className="bg-gray-300 py-[1px] w-full " />
 			<div className="w-full relative left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 mt-5 text-gray-800">
 				<span>
-					© 2022 ZiShop. All rights reserved - Designed and Developed with{" "}
+					© 2022 Hub. All rights reserved - Designed and Developed with{" "}
 					<AiFillHeart
 						style={{ color: "red", fontSize: "1.5rem", display: "inline" }}
 					/>{" "}

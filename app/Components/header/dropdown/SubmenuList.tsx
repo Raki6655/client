@@ -6,7 +6,7 @@ import { IDropDown, ISubmenuItems } from "@/app/types/typed";
 const SubmenuList = ({ submenuItem }: ISubmenuItems) => {
 	console.log(submenuItem);
 	return (
-		<div className="relative bg-white w-3/4 ml-1 max-h-full flex">
+		<div className="submenu-list relative  w-3/4 ml-1 max-h-full flex">
 			{submenuItem ? (
 				submenuItem?.map((item, index) => (
 					<div className="flex flex-col w-full h-auto mt-10" key={item.title}>

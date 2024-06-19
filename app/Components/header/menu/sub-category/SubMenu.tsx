@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import { IDropDown } from "../../dropdown/DropDownMenuV2";
 import { useSelector } from "react-redux";
+import "../navbar.css";
 import "./submenu.css";
 import { BiArrowBack } from "react-icons/bi";
 import {
@@ -13,6 +14,7 @@ interface SubMenuProps {
 	open: boolean;
 	close: () => void;
 	state: string;
+
 }
 
 const SubMenu = forwardRef<HTMLDivElement, SubMenuProps>(
@@ -37,7 +39,7 @@ const SubMenu = forwardRef<HTMLDivElement, SubMenuProps>(
         </span> */}
 
 				<div
-					className={`submenu w-[80%] h-full bg-white fixed top-0 left-0 flex flex-col }`}
+					className={`navbar w-[80vw] h-full bg-white fixed z-[1000] top-0 py-3} submenu ${getAnimationClassName()}`}
 					ref={ref}
 				>
 					<div className="w-full flex item-center  gap-5 px-2 py-5">

@@ -1,8 +1,8 @@
 import React from "react";
-import ExpressDeliveryImage from "../../public/images/benefit-icons/005-delivery-truck-2.webp";
-import CashOnDeliveryImage from "../../public/images/benefit-icons/003-cash-on-delivery.webp";
-import HeadPhoneImage from "../../public/images/benefit-icons/004-headphones.webp";
-import BestSellerImage from "../../public/images/benefit-icons/006-best-seller.webp";
+import ExpressDeliveryImage from "../../../public/images/benefit-icons/005-delivery-truck-2.webp";
+import CashOnDeliveryImage from "../../../public/images/benefit-icons/003-cash-on-delivery.webp";
+import HeadPhoneImage from "../../../public/images/benefit-icons/004-headphones.webp";
+import BestSellerImage from "../../../public/images/benefit-icons/006-best-seller.webp";
 import Image from "next/image";
 const benifitData = [
 	{

@@ -11,7 +11,7 @@
 	opacity: 0; */
 	overflow: hidden;
 	position: fixed;
-	left: -30rem;
+	left: -40rem;
 	top: 0;
 }
 .submenu.entering,
@@ -28,15 +28,19 @@
 .submenu.exiting,
 .submenu.exited {
 	/* Transition duration */
-	transition: left 300ms ease-in-out;
+	transition: right 300ms ease-in-out;
 	/* Final width */
-	left: -30rem;
+	left: -40rem;
 
 	/* visibility: hidden;
 	opacity: 0; */
 }
 .dropdown {
 	height: 0;
+	background: rgb(var(--color-bg));
+}
+.submenu-list{
+	background: rgb(var(--color-bg));
 }
 .dropdown.entering,
 .dropdown.entered {

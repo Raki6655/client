@@ -2,12 +2,12 @@
 import React from "react";
 // import BeautyBanner from "../../public/images/slider-img/beauty-banner.webp";
 
-import BeautyBanner1 from "../../public/images/slider-img/beauty-banner.webp";
-import BeautyBanner2 from "../../public/images/slider-img/digital-banner.webp";
-import BeautyBanner3 from "../../public/images/slider-img/fashion-banner.webp";
-import BeautyBanner4 from "../../public/images/slider-img/house-banner.webp";
-import BeautyBanner5 from "../../public/images/slider-img/stationery-banner.webp";
-import BeautyBanner6 from "../../public/images/slider-img/toy-banner.webp";
+import BeautyBanner1 from "../../../public/images/slider-img/beauty-banner.webp";
+import BeautyBanner2 from "../../../public/images/slider-img/digital-banner.webp";
+import BeautyBanner3 from "../../../public/images/slider-img/fashion-banner.webp";
+import BeautyBanner4 from "../../../public/images/slider-img/house-banner.webp";
+import BeautyBanner5 from "../../../public/images/slider-img/stationery-banner.webp";
+import BeautyBanner6 from "../../../public/images/slider-img/toy-banner.webp";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -19,7 +19,7 @@ import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
 const index = () => {
 	const settings = {
 		dots: true,
-		infinite: false,
+		infinite: true,
 		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,

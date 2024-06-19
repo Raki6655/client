@@ -44,7 +44,7 @@ const DropDownMenu = forwardRef<HTMLDivElement, DropDownRootProps>(
 		};
 		return (
 			<div
-				className={`flex relative z[1011] w-[97%] rounded-b-lg bg-white h-[60%] mx-auto dropdown  pt-5 ${getAnimationClassName()}`}
+				className={`dropdown flex relative z[1011] w-[97%] rounded-b-lg h-[60%] mx-auto dropdown  pt-5 ${getAnimationClassName()}`}
 				ref={ref}
 				onMouseLeave={() => closeDrop()}
 			>

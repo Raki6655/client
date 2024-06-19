@@ -58,7 +58,7 @@ const LeftView = () => {
 					<>
 						<div
 							ref={dropDownRef}
-							className="fixed w-[100vw] h-full bg-black/40 z-[100] top-[8rem] left-0"
+							className="fixed w-[100vw] h-full bg-black/40 z-[100] top-[11rem] left-0"
 							style={{
 								...defaultStyle,
 								...transitionStyles[state],
