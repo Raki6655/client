@@ -74,7 +74,7 @@ const OffersCarausel: React.FC<ISpecialOffer> = ({ data }) => {
 					// <Link
 					// 	href={`${item.category[0]}/${item.category[1]}/${item.category[2]}/${item}`} key={item._id}
 					// >
-					<div className="h-60 lg:h-80 relative w-40  bg-blue-100 flex-1 lg:flex-initial lg:w-60 rounded-md cursor-pointer py-5 px-2 my-0 lg:my-5">
+					<div key={item._id} className="h-60 lg:h-80 relative w-40  bg-blue-100 flex-1 lg:flex-initial lg:w-60 rounded-md cursor-pointer py-5 px-2 my-0 lg:my-5">
 						<Image
 							src={item.image[0]}
 							alt="jbl_image"
